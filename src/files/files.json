@@ -1,0 +1,47 @@
+{
+    "id": "test_id",
+    "1º Ano": {
+        "id": "test_id",
+        "Example Folder": {
+            "id": "test_id",
+            "Example Folder 2": {
+                "id": "test_id",
+                "files": [
+                    {
+                        "name": "File1.pdf",
+                        "id": "test_id"
+                    },
+                    {
+                        "name": "File2.pdf",
+                        "id": "test_id"
+                    },
+                    {
+                        "name": "File3.pdf",
+                        "id": "test_id"
+                    }
+                ]
+            },
+            "Example Folder 3": {
+                "id": "test_id",
+                "files": [
+                    {
+                        "name": "File1.pdf",
+                        "id": "test_id"
+                    },
+                    {
+                        "name": "File2.pdf",
+                        "id": "test_id"
+                    },
+                    {
+                        "name": "File3.pdf",
+                        "id": "test_id"
+                    }
+                ]
+            }
+        }
+    },
+    "2º Ano": {},
+    "3º Ano": {},
+    "4º Ano": {},
+    "5º Ano": {}
+}

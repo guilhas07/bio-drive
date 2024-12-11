@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap");
+
+#brand img {
+    width: 40px;
+    height: 40px;
+}
+
+#brand {
+    font-family: Audiowide, cursive;
+    font-weight: bold;
+    font-size: clamp(1.167rem, 1vw + 1rem, 1.667rem);
+}
+
+#banner {
+    background-image: url("/images/repositorioblur.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Audiowide, cursive;
+}
+
+.login {
+    border: 1px solid rgb(161, 220, 82);
+    color: rgb(161, 220, 82);
+}
+
+.logout {
+    border: 1px solid #da291c;
+    color: #da291c;
+}
+
+footer {
+    background-color: #111;
+}
+
+footer a {
+    color: white;
+}
+
+.dark {
+    background-color: #111 !important;
+    color: white !important;
+}
+
+.toggle {
+    border-color: white !important;
+}
+
+.toggle .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.blue {
+    background-color: #309088 !important;
+}
+
+.custom-table {
+    color: black;
+}
+
+.custom-table thead * {
+    --bs-table-bg: #309088 !important;
+    color: white !important;
+}
+
+.custom-table tbody * {
+    color: inherit;
+    background-color: inherit;
+}

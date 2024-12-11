@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./fragments/head.ejs'); %>
+<body class="d-flex flex-column min-vh-100">
+    <%- include('./fragments/header.ejs'); %>
+    <main class="d-flex flex-column flex-grow-1">
+        <div class="d-flex flex-column flex-grow-1 justify-content-start">
+            <section id="banner" class="container-fluid p-0 d-flex justify-content-center">
+                <h1 class="p-3">Repositório de Engenharia Biológica</h1>
+            </section>
+            <div class="text-center p-4">
+                <h2>Bem-vindo ao Repositório de Engenharia Biológica!</h2>
+                <p class="p-2">Para teres acesso aos documentos tens de dar login com as credenciais do fénix <i class="fa-solid fa-key"></i>.</p>
+                <br><br>
+                <p>O repositório tem um caráter dinâmico e participativo. Caso tenhas material de estudo que não esteja no repositório, envia-nos um email com o respetivo material anexado e devidamente identificado, ou preenche o seguinte formulário:</p>
+                <br><br>
+                <button class="btn dark" href="https://docs.google.com/forms/d/e/1FAIpQLSdsVS6ymHln25464lklVVKB05KIVurKX9ZQbnTIMQwLoWHRLg/viewform">Formulário</button>
+                <button class="btn dark" href="mailto: repositorio.neb@gmail.com">Email</button>
+                <br><br>
+                <p>Se tiveres alguma sugestão, não hesites em falar connosco!</p>
+                <p><strong>Bom Estudo!</strong></p>
+            </div>
+        </div>
+        <%- include('./fragments/footer.ejs'); %>
+    </main>
+</body>
+</html>

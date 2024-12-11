@@ -1,0 +1,33 @@
+<div class="container">
+    <table class="table custom-table mt-5">
+        <thead>
+            <tr>
+                <th class="p-2" colspan="2">
+                    <% let path_size = path.length; %>
+                    <% for (let i = 0; i < path_size; i++) { %>
+                        <a class="text-decoration-none" href="<%= "../".repeat(path_size-i-1) %>"> <%= path[i] %> </a><i class="fa-solid fa-angle-right fa-xs"></i>
+                    <% } %>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% for ( let i in data){ %>
+                <% if (i === "files"){ %>
+                    <% for ( let j of data["files"]){ %>
+                        <tr class="d-flex align-items-center">
+                            <td class="flex-grow-1 p-2"><a class="text-decoration-none" href="https://drive.google.com/file/d/<%=j.id%>/view"><%=j.name%></a></td>
+                            <td class="p-2 me-2"><a class="text-decoration-none" href="https://drive.google.com/uc?export=download&id=<%=j.id%>"><i class="fa-solid fa-download fa-lg d-inline"></i></td>
+                        </tr>
+                    <% } %>
+                <% }else {%>
+                      <% if( i !== "id") {%>
+                             <tr >
+                                <td class="p-2" colspan="2"><a class="text-decoration-none" href="<%= `./${i}/` %>"><%= i %></a></td>
+                            </tr>
+                      <% } %>
+                <% } %>
+            <% } %>
+        </tbody>
+    </table>
+</div>

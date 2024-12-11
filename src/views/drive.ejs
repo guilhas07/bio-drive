@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt">
+<%- include('./fragments/head.ejs'); %>
+<body class="d-flex flex-column min-vh-100">
+    <%- include('./fragments/header.ejs'); %>
+    <main class="d-flex flex-column flex-grow-1">
+    
+        <div class="d-flex flex-grow-1">
+            <% if (data) { %>
+                <%- include('./fragments/files.ejs'); %>
+            <% }else { %> 
+                <%- include('./fragments/help.ejs'); %>
+            <% } %> 
+        </div>
+        <%- include('./fragments/footer.ejs'); %>
+    </main>
+</body>
+</html>

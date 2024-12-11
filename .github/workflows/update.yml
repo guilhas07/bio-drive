@@ -1,0 +1,23 @@
+name: Update json files
+on:
+    # Uncomment to run automatically
+    # schedule:
+    #     - cron: "20 4 * * 0"
+    workflow_dispatch:
+jobs:
+    update:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: 22
+                  cache: "npm"
+            - run: npm ci
+            - run: npm run update
+              env:
+                  GOOGLE_API: ${{ secrets.GOOGLE_API }}
+            - name: Commit and push changes
+              uses: stefanzweifel/git-auto-commit-action@v4
+              with:
+                  commit_message: "Updated server json files"

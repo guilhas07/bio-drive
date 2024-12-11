@@ -1,0 +1,36 @@
+<header class="sticky-top d-flex flex-column align-items-center p-2 dark">
+    <div class="d-flex w-100">
+        <div id="empty" class="me-auto">
+        </div>
+        <a id="brand" class="mx-auto d-flex align-content-center text-decoration-none dark" href="/">
+            <img src="/images/logopequeno.png" alt="Logo NEBIST" class="p-1"></img>Bio Drive
+        </a>
+
+        <div class="ms-auto p-2">
+            <% if (user) { %>
+                <a class="logout p-1" href="/logout"><i class="fa-solid fa-right-to-bracket"></i></a>
+            <% }else { %> 
+                <a class="login p-1" href="/login"><i class="fa fa-key" aria-hidden="true"></i></a>
+            <% } %> 
+        </div>
+    </div>
+
+    <% if (user) { %>
+        <nav class="navbar navbar-expand-sm bg-body-secondary w-100 dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                        <div class="navbar-nav d-flex w-100 justify-content-center">
+                            <a class="text-decoration-none text-center p-2 dark" href="/drive/1º Ano/">1º Ano</a>
+                            <a class="text-decoration-none text-center p-2 dark" href="/drive/2º Ano/">2º Ano</a>
+                            <a class="text-decoration-none text-center p-2 dark" href="/drive/3º Ano/">3º Ano</a>
+                            <a class="text-decoration-none text-center p-2 dark" href="/drive/4º Ano/">4º Ano</a>
+                            <a class="text-decoration-none text-center p-2 dark" href="/drive/5º Ano/">5º Ano</a>
+                        </div>
+                </div>
+            </div>
+        </nav>
+    <% } %> 
+</header>
